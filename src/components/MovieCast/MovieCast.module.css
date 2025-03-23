@@ -1,0 +1,25 @@
+.listCast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+  
+.itemCast {
+    max-width: 150px;
+    margin-right: 40px;
+}
+  
+.imgCast {
+    width: 150px;
+    border-radius: 8px;
+}
+  
+.textCast {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: rgb(20, 18, 36);
+}
