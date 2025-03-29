@@ -19,7 +19,7 @@ function App() {
         <AppBar />
 
         <Suspense fallback={<Loader/>}>
-
+ 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
