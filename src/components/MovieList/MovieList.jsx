@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import css from "./MoviesList.module.css";
+import css from "./MovieList.module.css";
 
 export default function MovieList({ movies }) {
   const locations = useLocation();
@@ -7,7 +7,7 @@ export default function MovieList({ movies }) {
   if (!movies || movies.length === 0) {
     return <p>No movies available at the moment.</p>;
   }
-
+  
   return (
     <div>
       <ul>

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import css from "./MovieFeedback.module.css";
+import css from "./MovieReviews.module.css";
 import { fetchMoviesReviews } from "../../moviesApi";
 import Loader from "../Loader/Loader";
 import MessageError from "../MessageError/MessageError";
 import { useParams } from "react-router-dom";
 
-export default function MovieFeedback() {
+export default function MovieReviews() {
   const { movieId } = useParams();
 
   const [feedbacks, setfeedbacks] = useState([]);

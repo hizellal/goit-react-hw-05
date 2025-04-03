@@ -1,5 +1,5 @@
 import { Outlet, useLocation, useParams, NavLink } from "react-router-dom";
-import css from "./MovieInfo.module.css";
+import css from "./MovieDetailsPage.module.css";
 import { useEffect, useRef, useState } from "react";
 import { fetchMoviesById } from "../../moviesApi";
 import Loader from "../../components/Loader/Loader";

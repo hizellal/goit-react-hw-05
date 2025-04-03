@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import css from "./Movies.module.css";
-import MoviesList from "../../components/MoviesList/MoviesList";
+import css from "./MoviesPage.module.css";
+import MovieList from "../../components/MovieList/MovieList";
 import { fetchMoviesByQuery } from "../../moviesApi";
 import Loader from "../../components/Loader/Loader";
 import MessageError from "../../components/MessageError/MessageError";
@@ -8,7 +8,7 @@ import { useSearchParams } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { Formik, Form, Field } from "formik";
 
-export default function Movies() {
+export default function MoviesPage() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -74,7 +74,7 @@ export default function Movies() {
     </Formik>
       {isLoading && <Loader />}
       {error && <MessageError />}
-      <MoviesList movies={movies} />
+      <MovieList movies={movies} />
     </div>
   );
 }

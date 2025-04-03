@@ -1,12 +1,12 @@
-import css from "./Home.module.css";
+import css from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 import { fetchTrendingMovies } from "../../moviesApi";
 import Loader from "../../components/Loader/Loader";
 import MessageError from "../../components/MessageError/MessageError";
-import MoviesList from "../../components/MoviesList/MoviesList";
+import MoviesList from "../../components/MovieList/MovieList";
 
 
-export default function Home() {
+export default function HomePage() {
   const [movies, setMovie] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
